@@ -1,0 +1,4 @@
+Addition: [ 3  7 11]
+Subtraction: [1 1 1]
+Dot_Product: 44
+Magnitude: 7.483314773547883
