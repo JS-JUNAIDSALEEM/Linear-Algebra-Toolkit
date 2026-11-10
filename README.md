@@ -1,34 +1,46 @@
-# Linear Algebra Toolkit v1
+# Linear Algebra Toolkit
 
-## About the Project
+## Introduction
 
-Linear Algebra Toolkit is a Python project that I created to practice basic linear algebra operations using NumPy.
+Linear Algebra Toolkit is a Python-based project that performs basic vector and matrix operations. It also helps users solve systems of linear equations.
 
-The project performs different operations on vectors and matrices. It also calculates matrix determinants, finds matrix inverses, and solves simple linear equations.
-
-I created this project to understand how mathematical operations can be performed using Python.
+This project is developed using Python and NumPy. It provides a simple menu-based interface where users can select an operation, enter values, and view the results.
 
 ## Features
 
-- Perform vector addition
-- Perform vector subtraction
-- Calculate vector dot product
-- Calculate vector magnitude
-- Normalize vectors
-- Perform matrix addition
-- Perform matrix subtraction
-- Perform matrix multiplication
-- Calculate matrix transpose
-- Calculate matrix determinant
-- Find matrix inverse
-- Solve simple linear equations
-- Save operation results in text files
+### 1. Vector Operations
+- Vector Addition
+- Vector Subtraction
+- Vector Dot Product
+- Vector Magnitude
+- Vector Normalization
+
+### 2. Matrix Operations
+- Matrix Addition
+- Matrix Subtraction
+- Matrix Multiplication
+- Matrix Transpose
+- Matrix Determinant
+- Matrix Inverse
+
+### 3. Linear Equations
+- Solve systems of linear equations using matrices.
+
+### 4. Input Validation
+- Checks invalid numeric inputs.
+- Checks vector and matrix dimensions.
+- Prevents operations on incompatible inputs.
+- Handles zero-vector normalization.
+- Checks singular matrices before inverse and equation operations.
+
+### 5. Save Results
+The project saves operation results in text files inside the `output` folder.
 
 ## Technologies Used
 
 - Python
 - NumPy
-- File Handling
+- Unit Testing (unittest)
 
 ## Project Structure
 
@@ -36,74 +48,104 @@ I created this project to understand how mathematical operations can be performe
 Linear-Algebra-Toolkit/
 │
 ├── main.py
-├── README.md
 ├── requirements.txt
+├── README.md
 ├── .gitignore
 │
-└── output/
-    ├── vector_results.txt
-    ├── matrix_results.txt
-    └── equation_solution.txt
+├── output/
+│   ├── vector_results.txt
+│   ├── matrix_results.txt
+│   └── equation_solution.txt
+│
+└── tests/
+    └── test_analysis.py
 ```
 
 ## Installation
 
-### 1. Clone the Repository
+**Step 1: Clone the repository**
 
 ```bash
 git clone https://github.com/JS-JUNAIDSALEEM/Linear-Algebra-Toolkit.git
 ```
 
-### 2. Open the Project Folder
+**Step 2: Open the project folder**
 
 ```bash
 cd Linear-Algebra-Toolkit
 ```
 
-### 3. Install Required Library
+**Step 3: Install the required library**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Run the Project
+## How to Run
+
+Run the following command in the terminal:
 
 ```bash
 python main.py
 ```
 
-## Output Files
+The project will display a menu:
 
-The project generates three text files inside the output folder:
+```text
+1. Vector Operations
+2. Matrix Operations
+3. Solve Linear Equations
+4. Exit
+```
 
-- **vector_results.txt:** Contains results of vector operations.
-- **matrix_results.txt:** Contains results of matrix operations.
-- **equation_solution.txt:** Contains the solution of linear equations.
+Select an option and enter the required values to perform an operation.
 
-## What I Learned
+## Running Unit Tests
 
-While making this project, I practiced:
+This project includes unit tests to check the main functions and their results.
 
-- Creating vectors and matrices using NumPy
-- Performing mathematical operations
-- Working with vector magnitude and normalization
-- Understanding matrix multiplication
-- Calculating determinants and inverse matrices
-- Solving linear equations
-- Using NumPy linear algebra functions
-- Saving results in text files
+The test file is located inside the `tests` folder.
 
-## Future Improvements
+Run the following command from the project root:
 
-- Add a menu-based interface.
-- Allow users to enter their own vectors and matrices.
-- Add more mathematical operations.
-- Handle different matrix dimensions.
-- Add support for more linear algebra problems.
+```bash
+py -m unittest discover -s tests -v
+```
+
+The test file currently contains **23 test cases** covering:
+
+- Vector operations
+- Matrix operations
+- Linear equation solving
+- Invalid inputs
+- Dimension checking
+- Singular matrix handling
+
+*Note: Test results should be verified by running the command locally.*
+
+## Output
+
+The project saves results in the `output` folder.
+
+- `vector_results.txt` – Stores vector operation results.
+- `matrix_results.txt` – Stores matrix operation results.
+- `equation_solution.txt` – Stores solutions of linear equations.
+
+## Learning Objectives
+
+Through this project, I practiced:
+
+- Working with Python functions.
+- Using NumPy for mathematical operations.
+- Understanding vectors and matrices.
+- Applying input validation.
+- Handling errors and invalid inputs.
+- Saving results in text files.
+- Writing unit tests using Python unittest.
 
 ## Author
 
-### Junaid Saleem
+**Junaid Saleem**
 
-- **GitHub:** [JS-JUNAIDSALEEM](https://github.com/JS-JUNAIDSALEEM)
-- **LinkedIn:** [Junaid Saleem](https://www.linkedin.com/in/junaid-saleem-developer/)
+GitHub: [JS-JUNAIDSALEEM](https://github.com/JS-JUNAIDSALEEM)
+LinkedIn: [Junaid Saleem](https://www.linkedin.com/in/junaid-saleem-developer/)
