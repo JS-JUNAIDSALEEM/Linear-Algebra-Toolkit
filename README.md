@@ -145,7 +145,7 @@ Through this project, I practiced:
 
 ## Author
 
-**Junaid Saleem**
+### Junaid Saleem
 
-GitHub: [JS-JUNAIDSALEEM](https://github.com/JS-JUNAIDSALEEM)
-LinkedIn: [Junaid Saleem](https://www.linkedin.com/in/junaid-saleem-developer/)
+- **GitHub:** [JS-JUNAIDSALEEM](https://github.com/JS-JUNAIDSALEEM)
+- **LinkedIn:** [Junaid Saleem](https://www.linkedin.com/in/junaid-saleem-developer/)
