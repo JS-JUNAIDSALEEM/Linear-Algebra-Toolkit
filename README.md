@@ -112,7 +112,7 @@ Run the following command from the project root:
 py -m unittest discover -s tests -v
 ```
 
-The test file currently contains **23 test cases** covering:
+The test file currently contains **24 test cases** covering:
 
 - Vector operations
 - Matrix operations
